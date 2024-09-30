@@ -1,6 +1,16 @@
-from flask import Flask, render_template # type: ignore
+from flask import Flask, render_template, redirect, url_for # type: ignore
+#from flask_mysqldb import MySQL # type: ignore
+#import MySQLdb.cursors # type: ignore
+#import streamlit as st # type: ignore
 
 app = Flask(__name__)
+
+#app.config['MYSQL_HOST'] = 'localhost'
+#app.config['MYSQL_USER'] = 'ari'
+#app.config['MYSQL_PASSWORD'] = 'hernandezarian320'
+#app.config['MYSQL_DB'] = 'your_database'
+
+#mysql = MySQL(app)
 
 @app.route('/')
 def home():

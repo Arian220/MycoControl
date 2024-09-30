@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Presentation</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
         <nav>
@@ -18,8 +18,10 @@
     </nav>
 
     <div class="container">
-        <img src="{{ url_for('static', filename='images/chapingo.png') }}" alt="Descripción de la imagen" class="imagen">
-        <h1>Welcome to the Mushroom Cultivation Project</h1>
+        <div class="header">
+            <img src="{{ url_for('static', filename='images/chapingo.png') }}" alt="Descripción de la imagen" class="imagen">
+            <h1>Welcome to the Mushroom Cultivation Project</h1>
+        </div>
         <p>This project aims to develop a control and monitoring system for environmental conditions to optimize mushroom cultivation.</p>
         <p>Using technologies such as Raspberry Pi and sensors, we seek to create an ideal environment for mushroom growth, facilitating production and ensuring quality.</p>
         <p>We hope this system will help improve cultivation practices and contribute to sustainability in agriculture.</p>
