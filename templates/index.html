@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presentación del Proyecto</title>
+    <title>Project Presentation</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
+        <nav>
+        <ul class="tabs">
+            <li><a href="/">Home</a></li>
+            <li><a href="/monitoring">Environmental Monitoring</a></li>
+            <li><a href="/psychrometric">Psychrometric Chart</a></li>
+            <li><a href="/graphs">Graphs</a></li>
+            <li><a href="/camera">Camera</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <h1>Bienvenido al Proyecto de Cultivo de Hongos</h1>
-        <p>Este proyecto tiene como objetivo desarrollar un sistema de control y monitoreo ambiental para optimizar el cultivo de hongos, en particular el champiñón.</p>
-        <p>Utilizando tecnologías como la Raspberry Pi y sensores, se busca crear un ambiente ideal para el crecimiento de los hongos, facilitando su producción y asegurando su calidad.</p>
-        <p>Esperamos que este sistema ayude a mejorar las prácticas de cultivo y a contribuir a la sostenibilidad en la agricultura.</p>
         <img src="{{ url_for('static', filename='images/chapingo.png') }}" alt="Descripción de la imagen" class="imagen">
+        <h1>Welcome to the Mushroom Cultivation Project</h1>
+        <p>This project aims to develop a control and monitoring system for environmental conditions to optimize mushroom cultivation.</p>
+        <p>Using technologies such as Raspberry Pi and sensors, we seek to create an ideal environment for mushroom growth, facilitating production and ensuring quality.</p>
+        <p>We hope this system will help improve cultivation practices and contribute to sustainability in agriculture.</p>
     </div>
 </body>
 </html>
