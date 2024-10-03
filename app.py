@@ -5,15 +5,13 @@ from flask import Flask, render_template, redirect, url_for # type: ignore
 
 app = Flask(__name__)
 
-#app.config['MYSQL_HOST'] = 'localhost'
-#app.config['MYSQL_USER'] = 'ari'
-#app.config['MYSQL_PASSWORD'] = 'hernandezarian320'
-#app.config['MYSQL_DB'] = 'your_database'
+
 
 #mysql = MySQL(app)
 
 @app.route('/')
 def home():
+    
     return render_template('index.html')
 
 @app.route('/monitoring')

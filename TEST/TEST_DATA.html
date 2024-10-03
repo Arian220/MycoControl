@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo del Sistema</title>
+    <!-- Link to external CSS file-->
+    <link rel="stylesheet" href="TEST_.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Monitoreo del Sistema de Cultivo de Champiñón</h1>
+        <nav>
+            <a href="/monitoreo">Monitoreo</a>
+            <a href="/graficas">Gráficas Interactivas</a>
+        </nav>
+    </header>
+    
+    <!-- Sección principal -->
+    <section id="dashboard">
+        <div class="card">
+            <h3>Temperatura</h3>
+            <canvas id="tempChart"></canvas>
+        </div>
+        <div class="card">
+            <h3>Humedad</h3>
+            <canvas id="humidityChart"></canvas>
+        </div>
+        <!-- Más gráficos o indicadores -->
+    </section>
+
+    <!-- Script para cargar las gráficas -->
+    <script>
+        var tempCtx = document.getElementById('tempChart').getContext('2d');
+        var tempChart = new Chart(tempCtx, {
+            type: 'line',
+            data: {
+                labels: ['10:00', '10:10', '10:20', '10:30'],
+                datasets: [{
+                    label: 'Temperatura',
+                    data: [22, 23, 21, 24],
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    borderWidth: 2
+                }]
+            }
+        });
+    </script>
+</body>
+</html>

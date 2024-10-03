@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Presentation</title>
+    <title>MycoControl</title>
+    <!-- Link to external CSS file-->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
 <body>
-        <nav>
-        <ul class="tabs">
+    <div class="background-image-container"></div>
+    
+    <nav class="sidebar">
+        <ul>
             <li><a href="/">Home</a></li>
             <li><a href="/monitoring">Environmental Monitoring</a></li>
             <li><a href="/psychrometric">Psychrometric Chart</a></li>
@@ -17,14 +20,47 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <div class="header">
-            <img src="{{ url_for('static', filename='images/chapingo.png') }}" alt="Descripción de la imagen" class="imagen">
-            <h1>Welcome to the Mushroom Cultivation Project</h1>
+
+    <!-- Main content container -->
+    <div class="container-wrapper">
+
+        <!-- First block: Welcome section with image and project description -->
+        <div class="container">
+            <!-- Header section with logo image -->
+            <div class="header">
+                <!-- University logo (image) -->
+                <img src="{{ url_for('static', filename='images/chapingo.png') }}" alt="University Logo" class="imagen">
+            </div>
+            <!-- Text container with the project description -->
+            <div class="text-container">
+                <h1>Welcome to the Mushroom Cultivation Project</h1>
+                <p>This project aims to develop a control and monitoring system for environmental conditions to optimize mushroom cultivation.</p>
+                <p>Using technologies such as Raspberry Pi and sensors, we seek to create an ideal environment for mushroom growth, facilitating production and ensuring quality.</p>
+                <p>We hope this system will help improve cultivation practices and contribute to sustainability in agriculture.</p>
+            </div>
+            <div class="hero-content">
+                <h1>Welcome to the Mushroom Cultivation Project</h1>
+                <p>This project aims to develop a control and monitoring system for environmental conditions to optimize mushroom cultivation.</p>
+                <p>Using technologies such as Raspberry Pi and sensors, we seek to create an ideal environment for mushroom growth, facilitating production and ensuring quality.</p>
+                <p>We hope this system will help improve cultivation practices and contribute to sustainability in agriculture.</p>
+                <a href="#documentation" class="btn">View Documentation</a>
+                <a href="#features" class="btn">Learn More</a>
+            </div>
         </div>
-        <p>This project aims to develop a control and monitoring system for environmental conditions to optimize mushroom cultivation.</p>
-        <p>Using technologies such as Raspberry Pi and sensors, we seek to create an ideal environment for mushroom growth, facilitating production and ensuring quality.</p>
-        <p>We hope this system will help improve cultivation practices and contribute to sustainability in agriculture.</p>
+
+        <div class="hero">
+            
+        </div>
     </div>
+    
+        <!-- Second block: Hero section (Landing page introduction) -->      
+
+    <!-- Footer with credits and GitHub link -->
+    <footer>
+        <p>Universidad Autónoma Chapingo</p>
+        <p>Developed by: Arian Hernandez Hernandez</p>
+        <a href="https://github.com/Arian220/paginaWeb.git">GitHub Repository</a>
+    </footer>
+
 </body>
 </html>

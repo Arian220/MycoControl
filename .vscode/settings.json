@@ -1,5 +1,7 @@
 {
     "conventionalCommits.scopes": [
-        "style"
+        "style",
+        "ARQUITECTURE",
+        "ARCHITECTURE"
     ]
 }
